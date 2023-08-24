@@ -3,7 +3,7 @@ import { deleteCartThunk } from "../../store/slice/cart.slice.js";
 
 const CartElement = ({ product }) => {
   const dispatch = useDispatch();
-
+  console.log(product);
   const handleDelete = () => {
     dispatch(deleteCartThunk(product.id));
   };

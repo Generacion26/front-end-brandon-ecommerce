@@ -25,14 +25,14 @@ const SliderImg = ({ product }) => {
             window.innerWidth >= 600 && window.innerWidth < 992
               ? "8rem"
               : window.innerWidth >= 992
-              ? "12rem"
-              : "6rem",
+                ? "12rem"
+                : "6rem",
         }}
       ></div>
     );
   };
 
-  const images = product?.images.map((image) => {
+  const images = product?.productImgs.map((image) => {
     return image.url;
   });
 
